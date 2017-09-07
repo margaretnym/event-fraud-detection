@@ -56,7 +56,7 @@ GradientBoostingClassifier(criterion='friedman_mse', init=None,
 
 1. Enter http://52.89.86.85:5000/ into your web browser. You will be prompted to the screen below. 
 
-![](/Users/christophersankat/Desktop/Screen Shot 2017-09-07 at 4.09.46 PM.png)
+![App Architecture](https://github.com/margaretnym/event-fraud-detection/blob/master/images/Screen%20Shot%202017-09-07%20at%204.09.46%20PM.png)
 
 
 
