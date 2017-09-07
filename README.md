@@ -6,13 +6,11 @@ Due to confidentiality, the training data is not made public. The python code is
 
 Team:+1::+1::+1:: Alexandra Magana Noronha:cake:, Margaret Ng:icecream:, Christopher Sankat:pizza:
 
-## Diagram of all pieces + connections
-![GitHub Logo](/images/logo.png)
-Format: ![HERE!](url)
 
 ## Main Infrastructure
 - MongoDB
 - Flask
+- AWS
 
 ## Library Used
 - Numpy
@@ -23,6 +21,7 @@ Format: ![HERE!](url)
 - pymongo
 - flask
 
+## Diagram of all pieces + connections
 ![App Architecture](https://github.com/margaretnym/event-fraud-detection/blob/master/images/fraud_detection.png)
 
 ## Feature Picked up & its importance
