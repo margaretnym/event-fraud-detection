@@ -52,6 +52,14 @@ GradientBoostingClassifier(criterion='friedman_mse', init=None,
                n_estimators=100, presort='auto', random_state=None,
                subsample=1.0, verbose=0, warm_start=False)
 ```
+## Web-Application Instructions
+
+1. Enter http://52.89.86.85:5000/ into your web browser. You will be prompted to the screen below. 
+
+![](/Users/christophersankat/Desktop/Screen Shot 2017-09-07 at 4.09.46 PM.png)
+
+
+
 
 
 
