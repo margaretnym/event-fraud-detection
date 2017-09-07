@@ -54,3 +54,7 @@ GradientBoostingClassifier(criterion='friedman_mse', init=None,
                n_estimators=100, presort='auto', random_state=None,
                subsample=1.0, verbose=0, warm_start=False)
 ```
+
+## Special Thanks
+
+This project would not be possible without the efforts of Chris Wirgler and Dan Rupp.
