@@ -1,8 +1,6 @@
-import json
 import pandas as pd
 import numpy as np
 import requests
-import hashlib
 
 def prepare_data(new_data):
     clean_data = {}
@@ -26,7 +24,7 @@ def prepare_data(new_data):
         X = np.append(X, clean_data[col])
     return X
 
-def predict_fraud(new_data):
+def predict_fraud(new_data, model):
     X = prepare_data(new_data)
     return model.predict(X)
 
@@ -41,10 +39,3 @@ def check_duplicate(data, key, table):
     """Query the database to see if the observation
     has alreayd been seen and scored"""
     return table.find({key : data}).count() > 0
-
-
-def generate_hash(data):
-    """hash new posts recieved from API"""
-    hash_value = hashlib.md5()
-    hash_value.update(data)
-    return hash_value
