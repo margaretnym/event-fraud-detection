@@ -1,9 +1,7 @@
-import pickle
 import json
 import pandas as pd
 import numpy as np
 import requests
-from pymongo import MongoClient
 import hashlib
 
 def prepare_data(new_data):
@@ -50,27 +48,3 @@ def generate_hash(data):
     hash_value = hashlib.md5()
     hash_value.update(data)
     return hash_value
-
-
-if __name__ == '__main__':
-    """this isn't complete rn, I'm trying to figure out how
-    to distribute the functions between app.py and predict.py
-    """
-    hash_table = db['hashes']
-    data_table = db['data']
-
-    new_data = request_data_point()
-    new_data = json.loads(new_data)
-
-    data_hash = generate_hash(new_data)
-
-    if check_duplicate(data_hash, 'data_hash' hash_table) == False:
-        hash_table.insert_one({'data_hash' : data_hash})
-        new_data = json.loads(new_data)
-        prediction = predict_fraud(X)
-        new_data['fraud'] = prediction
-    #     data_table.insert_one(new_data)
-    # else:
-    #
-    #
-    # client.close()
