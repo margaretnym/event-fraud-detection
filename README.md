@@ -57,7 +57,7 @@ GradientBoostingClassifier(criterion='friedman_mse', init=None,
 
 1. Enter http://52.89.86.85:5000/ into your web browser. You will be prompted to the screen below. 
 
-![App Architecture](https://github.com/margaretnym/event-fraud-detection/blob/master/images/Screen%20Shot%202017-09-07%20at%204.17.48%20PM.png=250x)
+![App Architecture](https://github.com/margaretnym/event-fraud-detection/blob/master/images/Screen%20Shot%202017-09-07%20at%204.17.48%20PM.png)
 
 2. Enter username and password to access the Fraud Application. 
 
