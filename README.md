@@ -1,8 +1,9 @@
 # Event Fraud Detection Case Study
 
-A machine learning web application :rainbow: to predict fraud events on realtime data streams. Compared the performance of Logistic Regression, Random Forest and GradientBoasting Classifier Algorithms by fine tuning the model to have the highest score accuracy. GradientBoasting Classifier made up the final model with a score .93 and precision .56.
+:rainbow::rainbow::rainbow::rainbow::rainbow::rainbow:
+A machine learning web application to predict fraud events on realtime data streams. Compared the performance of Logistic Regression, Random Forest and GradientBoasting Classifier Algorithms by fine tuning the model to have the highest score accuracy. GradientBoasting Classifier made up the final model with a score .93 and precision .56.
 
-Due to confidentiality, the training data is not made public. The python code is made available in the src file. The model is also available as a pickle file.
+Due to confidentiality, the training data is not made public. The python code is made available in the app file. The model is also available as a pickle file.
 
 Team:+1::+1::+1:: Alexandra Magana Noronha:cake:, Margaret Ng:icecream:, Christopher Sankat:pizza:
 
