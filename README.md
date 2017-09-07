@@ -10,6 +10,10 @@ Team:+1::+1::+1:: Alexandra Magana Noronha:cake:, Margaret Ng:icecream:, Christo
 model_building.py - Set up training data and compares the performance of models and stores the best model in pickle format
 predit.py
 
+## Diagram of all pieces + connections
+![GitHub Logo](/images/logo.png)
+Format: ![HERE!](url)
+
 
 ## Library Used
 Numpy
@@ -40,9 +44,9 @@ payout_type_ACH|ACH for payout_type              |0.0193883622403
 
 ## Model picked
 GradientBoostingClassifier(criterion='friedman_mse', init=None,
-              learning_rate=0.1, loss='deviance', max_depth=4,
-              max_features='log2', max_leaf_nodes=None,
-              min_impurity_split=1e-07, min_samples_leaf=1,
-              min_samples_split=2, min_weight_fraction_leaf=0.0,
-              n_estimators=100, presort='auto', random_state=None,
-              subsample=1.0, verbose=0, warm_start=False)
+              > learning_rate=0.1, loss='deviance', max_depth=4,
+              > max_features='log2', max_leaf_nodes=None,
+              > min_impurity_split=1e-07, min_samples_leaf=1,
+              > min_samples_split=2, min_weight_fraction_leaf=0.0,
+              > n_estimators=100, presort='auto', random_state=None,
+              > subsample=1.0, verbose=0, warm_start=False)
