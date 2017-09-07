@@ -1,27 +1,29 @@
 # Event Fraud Detection Case Study
 
-A machine learning web application to predict fraud events on realtime data streams. Compared the performance of Logistic Regression, Random Forest and GradientBoasting Classifier Algorithms by fine tuning the model to have the highest score accuracy. GradientBoasting Classifier made up the final model with score 93% and precision 
+A machine learning web application :rainbow: to predict fraud events on realtime data streams. Compared the performance of Logistic Regression, Random Forest and GradientBoasting Classifier Algorithms by fine tuning the model to have the highest score accuracy. GradientBoasting Classifier made up the final model with score 93% and precision 
 
 Due to confidentiality, the training data is not made public. The python code is made available in the src file. The model is also available as a pickle file.
 
 Team:+1::+1::+1:: Alexandra Magana Noronha:cake:, Margaret Ng:icecream:, Christopher Sankat:pizza:
 
 ## Files Desciption
-model_building.py - Set up training data and compares the performance of models and stores the best model in pickle format
-predit.py
+- model_building.py - Set up training data and compares the performance of models and stores the best model in pickle format
+- predit.py
 
 ## Diagram of all pieces + connections
 ![GitHub Logo](/images/logo.png)
 Format: ![HERE!](url)
 
+## Main Infrastructure
+- MongoDB
+- Flask
 
 ## Library Used
-Numpy
-Pandas
-Sklearn
-Flask
-Jinja
-cPickle
+- Numpy
+- Pandas
+- Sklearn
+- Jinja
+- cPickle
 
 
 ## Feature Picked up & its importance
@@ -43,10 +45,12 @@ payout_type_ACH|ACH for payout_type              |0.0193883622403
 
 
 ## Model picked
+```python
 GradientBoostingClassifier(criterion='friedman_mse', init=None,
-              > learning_rate=0.1, loss='deviance', max_depth=4,
-              > max_features='log2', max_leaf_nodes=None,
-              > min_impurity_split=1e-07, min_samples_leaf=1,
-              > min_samples_split=2, min_weight_fraction_leaf=0.0,
-              > n_estimators=100, presort='auto', random_state=None,
-              > subsample=1.0, verbose=0, warm_start=False)
+               learning_rate=0.1, loss='deviance', max_depth=4,
+               max_features='log2', max_leaf_nodes=None,
+               min_impurity_split=1e-07, min_samples_leaf=1,
+               min_samples_split=2, min_weight_fraction_leaf=0.0,
+               n_estimators=100, presort='auto', random_state=None,
+               subsample=1.0, verbose=0, warm_start=False)
+```
