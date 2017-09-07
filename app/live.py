@@ -26,7 +26,6 @@ def run_all():
             new_data = json.loads(new_data)
             prediction = predict_fraud(new_data, model)
             new_data['fraud'] = prediction[0]
-            print new_data
             data_table.insert_one(new_data)
 
 

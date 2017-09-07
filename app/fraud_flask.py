@@ -16,13 +16,10 @@ def index():
 @app.route('/fraud')
 
 def fraud():
-    #template we need to update
-    # connection = MongoClient()
-    # db = connection['test']
-    # collection = db['baseball']
-    # pandas_input = collection.find({'earned_run_avg': {'$exists': True}})
-    pandas_input = data_table.find()
+    pandas_input = data_table.find({'fraud': 1}, {'name':1, '_id':0, 'venue_address':1})
+    #{'name':1},{'venue_address':1}
     df = pd.DataFrame(list(pandas_input))
+    # df = pd.concat([df.name, df.venue_address], axis=1)
     return df.to_html()
 
 
@@ -31,4 +28,4 @@ if __name__=="__main__":
     db = client['my_db']
     data_table = db['data']
 
-    app.run(host='0.0.0.0', port = 8000, debug=True)
+    app.run(host='0.0.0.0', port = 5000, debug=True)
