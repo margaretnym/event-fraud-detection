@@ -24,13 +24,6 @@ cPickle
 
 Features Picked | Feature Importance
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-
-
-
-
 body_length|                  |0.382260768935
 have_previous_payouts||0.212499442992
 payout_type_|NAN for payout_type|0.0808801964102
