@@ -37,6 +37,8 @@ if __name__=="__main__":
     hash_table = db['hashes']
     data_table = db['data']
 
+    app.run(host='0.0.0.0', port = 5000, debug=True)
+
     while True:
         sleep(10)
         new_data = request_data_point()
@@ -48,4 +50,3 @@ if __name__=="__main__":
             prediction = predict_fraud(new_data, model)
             new_data['fraud'] = prediction[0]
             data_table.insert_one(new_data)
-    app.run(host='0.0.0.0', port = 5000, debug=True)
