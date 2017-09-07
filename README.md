@@ -11,7 +11,7 @@ Team:+1::+1::+1:: Alexandra Magana Noronha:cake:, Margaret Ng:icecream:, Christo
 ## Main Infrastructure
 - MongoDB
 - Flask
-- AWS
+- AWS - EC2
 
 ## Library Used
 - Numpy
